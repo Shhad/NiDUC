@@ -1,6 +1,7 @@
 function [] = basic_analyze()
     %Analiza wynikow
-    dlugosc=1000;
+    file = dataset('File','output.txt');
+    dlugosc=length(file);
 
     sygPrzed = zeros(1,dlugosc);
     sygPo = zeros(1,dlugosc);
